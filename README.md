@@ -4,11 +4,11 @@ An Android app for managing your online classes with links to meetings and resou
 
 ## Screenshots
 <div style="display: flex; flex-wrap: wrap;">
-  <img src="https://raw.githubusercontent.com/87nehal/Classo/main/ScreenShots/ss%20(1).jpeg" style="width: 460px; height: 1000px; margin: 10px;">
   <img src="https://raw.githubusercontent.com/87nehal/Classo/main/ScreenShots/ss%20(2).jpeg" style="width: 460px; height: 1000px; margin: 10px;">
-  <img src="https://raw.githubusercontent.com/87nehal/Classo/main/ScreenShots/ss%20(4).jpeg" style="width: 460px; height: 1000px; margin: 10px;">
   <img src="https://raw.githubusercontent.com/87nehal/Classo/main/ScreenShots/ss%20(5).jpeg" style="width: 460px; height: 1000px; margin: 10px;">
+  <img src="https://raw.githubusercontent.com/87nehal/Classo/main/ScreenShots/ss%20(1).jpeg" style="width: 460px; height: 1000px; margin: 10px;">
   <img src="https://raw.githubusercontent.com/87nehal/Classo/main/ScreenShots/ss%20(6).jpeg" style="width: 460px; height: 1000px; margin: 10px;">
+  <img src="https://raw.githubusercontent.com/87nehal/Classo/main/ScreenShots/ss%20(4).jpeg" style="width: 460px; height: 1000px; margin: 10px;">
 </div>
 
 
