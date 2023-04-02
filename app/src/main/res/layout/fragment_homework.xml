@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4D0D0"
+    tools:context=".HomeworkFragment"
+    android:paddingBottom="70dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/homework"
+        android:clickable="true"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toTopOf="@+id/note"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp"
+        android:layout_margin="20dp"
+
+        app:rippleColor="#AACB73">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:fontFamily="@font/chuiya"
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Work"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:fontFamily="@font/chuiya"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:id="@+id/homeworkData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Homework Data Loading..."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homework"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        app:rippleColor="#F08080">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:fontFamily="@font/chuiya"
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notice"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:fontFamily="@font/chuiya"
+            android:id="@+id/noticeData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notice Data Loading..."
+            android:textSize="30dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

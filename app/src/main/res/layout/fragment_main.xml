@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment"
+    android:paddingBottom="100dp"
+    android:background="#E4D0D0">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="JR-IR 2023"
+        android:textAlignment="center"
+        android:textSize="65dp"
+        app:layout_constraintBottom_toTopOf="@+id/weekdays"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/chuiya"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/weekdays"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/weekends"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp"
+
+        app:rippleColor="#F4DFEF"
+        android:backgroundTint="#F8EDE3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuesday : 08:30 – 09:50 PM\n
+Wednesday : 08:30 – 09:50 PM\n
+Thursday : 08:30 – 09:50 PM"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="monospace"
+                android:textSize="17dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/weekends"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weekdays"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp"
+
+        app:rippleColor="#CCD5AE"
+        android:backgroundTint="#E9EDC9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saturday  : 02:00 – 05:00 PM\n
+Sunday    : 02:00 – 05:00 PM"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="monospace"
+                android:textSize="17dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

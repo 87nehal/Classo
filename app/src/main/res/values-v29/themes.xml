@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Classo" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:forceDarkAllowed">false</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#D5B4B4</item>
+        <item name="colorPrimaryVariant">#E4D0D0</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">#D5B4B4</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash</item>
+        <item name="windowSplashScreenBackground">#E4D0D0</item>
+        <item name="postSplashScreenTheme">@style/Theme.Classo</item>
+    </style>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/MainFragment"
+        android:icon="@drawable/main"
+        android:title="Schedule"
+        />
+    <item
+        android:id="@+id/HomeworkFragment"
+        android:icon="@drawable/homework"
+        android:title="Files"
+        />
+    <item
+        android:id="@+id/DirectoryFragment"
+        android:icon="@drawable/folder"
+        android:title="Files"
+        />
+</menu>
