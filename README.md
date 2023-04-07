@@ -23,7 +23,7 @@ An Android app for managing your online classes with links to meetings and resou
 ## Demo
 
 Download the latest version of the app from the following link: 
-https://github.com/87nehal/Classo/blob/main/Demo/Classo_Beta(1-1.0).apk?raw=true
+https://github.com/87nehal/Classo/raw/main/Demo/Classo_Beta(2-2.0).apk
 
 ## Development
 
