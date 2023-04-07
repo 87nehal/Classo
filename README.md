@@ -8,6 +8,7 @@ An Android app for managing your online classes with links to meetings and resou
   <img src="https://raw.githubusercontent.com/87nehal/Classo/main/Screenshots/1.png" style="width: 230px; height: 500px; margin: 10px;">
   <img src="https://raw.githubusercontent.com/87nehal/Classo/main/Screenshots/2.png" style="width: 230px; height: 500px; margin: 10px;">
   <img src="https://raw.githubusercontent.com/87nehal/Classo/main/Screenshots/3.png" style="width: 230px; height: 500px; margin: 10px;">
+  <img src="https://raw.githubusercontent.com/87nehal/Classo/main/Screenshots/6.png" style="width: 230px; height: 500px; margin: 10px;">
   <img src="https://raw.githubusercontent.com/87nehal/Classo/main/Screenshots/4.png" style="width: 230px; height: 500px; margin: 10px;">
   <img src="https://raw.githubusercontent.com/87nehal/Classo/main/Screenshots/5.png"style="width: 230px; height: 500px; margin: 10px;">
 </div>
