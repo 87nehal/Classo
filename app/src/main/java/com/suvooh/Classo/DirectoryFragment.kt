@@ -10,6 +10,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.suvooh.Classo.CheckInternet
 import com.suvooh.Classo.R
 import com.suvooh.Classo.RecyclerViewAdapter
 import com.suvooh.Classo.databinding.FragmentDirectoryBinding
@@ -34,16 +35,17 @@ class DirectoryFragment : Fragment() {
         val recyclerView: RecyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(context)
 
-        lifecycleScope.launch(Dispatchers.IO) {
-            val data = dataGetter()
-            withContext(Dispatchers.Main) {
-                val adapter = RecyclerViewAdapter(data)
-                recyclerView.adapter = adapter
+        if(CheckInternet().isInternetAvailable(context)) {
+            lifecycleScope.launch(Dispatchers.IO) {
+                val data = dataGetter()
+                withContext(Dispatchers.Main) {
+                    val adapter = RecyclerViewAdapter(data)
+                    recyclerView.adapter = adapter
 
-                binding.loading.visibility = View.GONE
+                    binding.loading.visibility = View.GONE
+                }
             }
         }
-
         return binding.root
     }
 

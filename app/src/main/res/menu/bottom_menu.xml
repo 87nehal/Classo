@@ -15,4 +15,14 @@
         android:icon="@drawable/folder"
         android:title="Files"
         />
+    <item
+        android:id="@+id/TranslateFragment"
+        android:icon="@drawable/translate"
+        android:title="Translate"
+        />
+    <item
+        android:id="@+id/DictionaryFragment"
+        android:icon="@drawable/repository"
+        android:title="Dictionary"
+        />
 </menu>

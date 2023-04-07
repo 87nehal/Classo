@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.MainFragment -> replaceFragement(MainFragment())
                 R.id.DirectoryFragment -> replaceFragement(DirectoryFragment())
                 R.id.HomeworkFragment -> replaceFragement(HomeworkFragment())
+                R.id.TranslateFragment -> replaceFragement(TranslateFragment())
+                R.id.DictionaryFragment -> replaceFragement(DictionaryFragment())
                 else ->{
 
                 }

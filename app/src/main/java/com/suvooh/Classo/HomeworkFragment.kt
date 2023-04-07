@@ -3,13 +3,11 @@ package com.suvooh.Classo
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import com.google.android.material.card.MaterialCardView
 import com.suvooh.Classo.databinding.FragmentHomeworkBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -103,12 +101,17 @@ class HomeworkFragment : Fragment() {
             // set the ripple color of the card view
             binding.homework.rippleColor = rippleColor
         }
-        lifecycleScope.launch(Dispatchers.IO) {
-            val data = dataGetter()
-            withContext(Dispatchers.Main) {
-                binding.homeworkData.text = data[0].second
-                binding.noticeData.text = data[0].first
+        if(CheckInternet().isInternetAvailable(context)) {
+            lifecycleScope.launch(Dispatchers.IO) {
+                val data = dataGetter()
+                withContext(Dispatchers.Main) {
+                    binding.homeworkData.text = data[0].second
+                    binding.noticeData.text = data[0].first
+                }
             }
+        }else{
+            binding.homeworkData.text = "No Internet"
+            binding.noticeData.text = "No Internet"
         }
         // Inflate the layout for this fragment
         return binding.root
