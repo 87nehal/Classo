@@ -14,7 +14,7 @@
         android:layout_marginBottom="30dp"
         app:cardCornerRadius="25dp"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="300dp"
         app:layout_constraintBottom_toTopOf="@+id/note"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +60,7 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/note"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="300dp"
         app:cardCornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
