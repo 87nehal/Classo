@@ -21,6 +21,7 @@ An Android app for managing your online classes with links to meetings and resou
 - RecyclerView for resources links.
 - Notice page fragment.
 - Japanese/English Translator.
+- Japanese/English and Audio.
 - RecyclerView for Japanese Alphabet set.
 
 ## Demo
